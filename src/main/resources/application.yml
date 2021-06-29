@@ -1,0 +1,23 @@
+spring:
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: 'http://localhost:4200'
+            allowedMethods:
+              - GET
+              - HEAD
+              - POST
+              - PUT
+              - PATCH
+              - DELETE
+              - OPTIONS
+            allowedHeaders:
+              - 'Content-Type' 
+              - 'Authorization' 
+              - 'Origin' 
+              - 'x-access-token' 
+              - 'XSRF-TOKEN'
+           
+          
